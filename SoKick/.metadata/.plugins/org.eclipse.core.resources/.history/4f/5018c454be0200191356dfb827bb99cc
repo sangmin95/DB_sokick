@@ -1,0 +1,72 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!--  import JDBC package -->
+<%@ page language="java" import="java.sql.*"  %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Login</title>
+</head>
+	<body>
+<%
+	String url = "jdbc:oracle:thin:@localhost:1521:oraknu";
+	String user = "sokick";
+	String pass = "sokick";
+
+	Connection conn = null;
+	String sql = null;
+	String query = null;
+	RequestDispatcher rd = null;
+	int count = 0;
+	
+	try {
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		System.out.println("드라이버검색성공!");
+	} catch (ClassNotFoundException e) {
+		System.err.println("error = " + e.getMessage());
+		System.exit(1);
+	}
+
+	try {
+		conn = DriverManager.getConnection(url, user, pass);
+	} catch (SQLException e) {
+		System.err.println("sql error = " + e.getMessage());
+		System.exit(1);
+	}
+
+	try {
+		conn.setAutoCommit(false);
+
+		Statement stmt = conn.createStatement();
+		ResultSet rs = null;
+		
+		String sendid = request.getParameter("username");
+		String sendpass = request.getParameter("pass");
+
+		sql = "select * from student where sid = '" + sendid +"' and password = '" + sendpass + "'";
+		rs = stmt.executeQuery(sql);
+		while(rs.next()){
+			count++;
+			String sid = rs.getString("sid");
+			String password = rs.getString("password");
+			System.out.println(sid+","+password);
+		}
+		
+		if(count != 0)
+		{
+			System.out.println("로그인 완료!");
+		}
+		else
+			rd = request.getRequestDispatcher("Login.html");
+		
+		conn.commit();
+		conn.setAutoCommit(true);
+		stmt.close();
+		conn.close();
+	} catch (Exception e) {
+		System.err.println("sql error = " + e.getMessage());
+	}
+%>
+</body>
+</html>

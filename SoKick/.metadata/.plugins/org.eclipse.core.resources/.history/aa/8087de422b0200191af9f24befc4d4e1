@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="insert.jsp">
+학번 <br>
+<input type="text" name="sendid"> <br><br>
+
+비밀번호 <br>
+<input type="text" name="sendname"> <br><br>
+
+<input type="submit">
+
+</form>
+</body>
+</html>

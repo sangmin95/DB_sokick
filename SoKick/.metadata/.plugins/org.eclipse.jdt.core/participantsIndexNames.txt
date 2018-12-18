@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\Users\Wangi\Desktop\SoKick\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2631230279.index
+\SoKick\src

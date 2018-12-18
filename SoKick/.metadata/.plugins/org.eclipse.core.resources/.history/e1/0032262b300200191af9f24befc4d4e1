@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login V8</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+<form action="Login.jsp">
+학번 <br>
+<input type="text" name="sendid"> <br><br>
+
+비밀번호 <br>
+<input type="text" name="sendpass"> <br><br>
+
+<input type="submit">
+
+</form>
+</body>
+</html>

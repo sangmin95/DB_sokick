@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="insert.jsp">
+ID <br>
+<input type="text" name="sendid"> <br><br>
+
+이름<br>
+<input type="text" name="sendname"> <br><br>
+
+로그인<br>
+<input type="submit">
+
+</form>
+</body>
+</html>
