@@ -26,12 +26,7 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	<%request.setCharacterEncoding("UTF-8");%>
-    <%
-    String gate = (String)request.getParameter("gate");
-    String available = (String)request.getParameter("available");
-    %>
-
+	
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -43,11 +38,11 @@
                     <img src="images/knuMapMarker.PNG" width="400" height="300"><br><br><br>
                 </div>
                     <div class="form-group">
-                        <label for="id" >  출발지 &nbsp; : &nbsp; <%=gate%> </label>
+                        <label for="id" >  출발지 &nbsp; : &nbsp; <%=request.getAttribute("gate") %> </label>
                     </div>
 
                     <div class="form-group" id="wrapper" ">
-                        <label><%=gate%>에 현재 <%=available%>대의 kickboard가 사용 가능합니다.</label>                                               
+                        <label><% request.getAttribute("gate") %>에 현재 <%=request.getAttribute("available")%>대의 kickboard가 사용 가능합니다.</label>                                               
                     </div>
 				</form>
 			</div>
