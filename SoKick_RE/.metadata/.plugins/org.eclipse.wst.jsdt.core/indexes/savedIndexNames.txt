@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+C:\Users\Wangi\Desktop\SoKick_RE\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2631230279.index
+4184290454.index
+857585140.index
+1181242454.index
+4290952864.index
+2895402101.index
+447371967.index
+2009229663.index
