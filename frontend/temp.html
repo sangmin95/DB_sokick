@@ -26,7 +26,7 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	
+
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -38,11 +38,10 @@
                     <img src="images/knuMapMarker.PNG" width="400" height="300"><br><br><br>
                 </div>
                     <div class="form-group">
-                        <label for="id" >  출발지 &nbsp; : &nbsp; <%=request.getAttribute("gate") %> </label>
+                        <label for="id" >  출발지 &nbsp; : &nbsp; <%=gate%> </label>
                     </div>
-
                     <div class="form-group" id="wrapper" ">
-                        <label><% request.getAttribute("gate") %>에 현재 <%=request.getAttribute("available")%>대의 kickboard가 사용 가능합니다.</label>                                               
+                        <label><%=gate%>에 현재 <%=available%>대의 kickboard가 사용 가능합니다.</label>                                               
                     </div>
 				</form>
 			</div>
@@ -71,15 +70,3 @@
 
 </body>
 </html>
-
-<script>
-    function click_log_in(){
-		
-        //if id 없으면
-        //alert("없는 ID입니다.");
-        //if password 다르면
-        //alert("없는 password 입니다.");
-        //통과
-		//location.href="signin.jsp"
-    }    
-</script>
