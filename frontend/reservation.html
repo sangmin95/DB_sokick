@@ -8,6 +8,12 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    #wrapper{
+        width:500px;
+        margin:0 auto;
+    }
+    </style>
 </head>
 <body>
 
@@ -24,51 +30,73 @@
                 </div>
 
                 <div>
-                    <button class="login100-form-btn" data-target="#layerpop" data-toggle="modal">KICKBOARD 예약하기</button><br/>
+                    
 
                     <div class = "modal fade" id = "layerpop">
                         <div class="modal-dialog">
                             <div class = "modal-content">
-                                <div class="modal-header">
-                                    <h4 class = "modal-title">SOKICK 예약하기 - 어서 예약을 서두르세요!</h4>
-                                </div>
+                                
 
                                 <div class = "modal-body">
                                     <article class="container-fluid" >
                                         <div class="col-lg-12 col-md-10 mx-auto">
                                             <form role="form" class="needs-validation" novalidate action="<%=request.getContextPath()%>/controller_Register" method="post">
-                                                <div class="form-group">
-                                                    <label for="id">출발지 입력</label>
-                                                    <input type="text" class="form-control" id="id" name="id" placeholder="출발지를 입력해주세요. " required>
-
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="password">도착지 입력</label>
-                                                    <input type="password" class="form-control" id="password" name="password" placeholder="도착지를 입력해주세요. " required>
-
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label>시간대 입력</label>
-                                                    <select class = "form-control">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
+                                                <div class="form-group" style="text-align:center;">
+                                                    <label for="id" >  출발지 &nbsp; : &nbsp; </label>
+                                                    <select class = "form-control" style="text-align:center;">
+                                                        <option>북문</option>
+                                                        <option>서문</option>
+                                                        <option>정문</option>
+                                                        <option>동문</option>
+                                                        <option>쪽문</option>
                                                     </select>
-
+                                                    
+                                                </div>
+                                                <div class="form-group" style="text-align:center;">
+                                                    <label for="password">  도착지 &nbsp; : &nbsp; </label>
+                                                    <select class = "form-control" style="text-align:center;">
+                                                            <option>북문</option>
+                                                            <option>서문</option>
+                                                            <option>정문</option>
+                                                            <option>동문</option>
+                                                            <option>쪽문</option>
+                                                        </select>
                                                 </div>
 
-                                                <div class="form-group text-center">
-                                                    <button type="submit" id="submit" name="submit" class="btn btn-primary" style="background-color:#57b846;">
-                                                        예약하기<i class="fa fa-check spaceLeft"></i>
-                                                    </button>
-                                                    <button type="reset" class="btn btn-default" data-dismiss="modal">
-                                                        닫기<i class="fa fa-times spaceLeft"></i>
-                                                    </button>
+                                                <div class="form-group" id="wrapper" style="text-align:center;">
+                                                    <label>시간대 입력 &nbsp; : &nbsp; </label>
+                                                    <select class = "form-control">
+                                                        <option>09:00</option>
+                                                        <option>10:00</option>
+                                                        <option>11:00</option>
+                                                        <option>12:00</option>
+                                                        <option>13:00</option>
+                                                        <option>14:00</option>
+                                                        <option>15:00</option>
+                                                        <option>16:00</option>
+                                                        <option>17:00</option>
+                                                        <option>18:00</option>
+                                                        <option>19:00</option>
+                                                        <option>20:00</option>
+                                                    </select>
+                                                    <label>~</label>
+                                                    <select class = "form-control" >
+                                                        <option>09:00</option>
+                                                        <option>10:00</option>
+                                                        <option>11:00</option>
+                                                        <option>12:00</option>
+                                                        <option>13:00</option>
+                                                        <option>14:00</option>
+                                                        <option>15:00</option>
+                                                        <option>16:00</option>
+                                                        <option>17:00</option>
+                                                        <option>18:00</option>
+                                                        <option>19:00</option>
+                                                        <option>20:00</option>
+                                                    </select>
                                                 </div>
+                                                <br><br>
+                                                <button class="login100-form-btn" data-target="#layerpop" data-toggle="modal">KICKBOARD 예약하기</button><br/>
                                             </form>
                                         </div>
                                     </article>
