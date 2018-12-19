@@ -28,8 +28,23 @@
 <body>
 	<%request.setCharacterEncoding("UTF-8");%>
     <%
-    String gate = (String)request.getParameter("gate");
+    String location = (String)request.getParameter("gate");
     String available = (String)request.getParameter("available");
+	String gate;
+
+	if(location == 1){
+		gate == "ë¶ë¬¸";
+	}else if(location == 2){
+		gate == "ì„œë¬¸";
+	}else if(location == 3){
+		gate == "ìª½ë¬¸";
+	}else if(location == 4){
+		gate == "ì •ë¬¸";
+	}else if(location == 5){
+		gate == "ë™ë¬¸";
+	}else{
+		gate == "error";
+	}
     %>
 
 	<div class="limiter">
@@ -37,17 +52,16 @@
 			<div class="wrap-login100">
 				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" >
                     <span class="login100-form-title">
-						KNU SOKICK ÇöÈ²È®ÀÎ
+						KNU SOKICK í˜„í™©í™•ì¸
 					</span>
                 <div>
                     <img src="images/knuMapMarker.PNG" width="400" height="300"><br><br><br>
                 </div>
                     <div class="form-group">
-                        <label for="id" >  Ãâ¹ßÁö &nbsp; : &nbsp; <%=gate%> </label>
+                        <label for="id" >  ì¶œë°œì§€ &nbsp; : &nbsp; <%=gate%> </label>
                     </div>
-
                     <div class="form-group" id="wrapper" ">
-                        <label><%=gate%>¿¡ ÇöÀç <%=available%>´ëÀÇ kickboard°¡ »ç¿ë °¡´ÉÇÕ´Ï´Ù.</label>                                               
+                        <label><%=gate%>ì— í˜„ì¬ <%=available%>ëŒ€ì˜ kickboardê°€ ì‚¬ìš© ê°€ëŠ¥í•©ë‹ˆë‹¤.</label>                                               
                     </div>
 				</form>
 			</div>
@@ -76,15 +90,3 @@
 
 </body>
 </html>
-
-<script>
-    function click_log_in(){
-		
-        //if id ¾øÀ¸¸é
-        //alert("¾ø´Â IDÀÔ´Ï´Ù.");
-        //if password ´Ù¸£¸é
-        //alert("¾ø´Â password ÀÔ´Ï´Ù.");
-        //Åë°ú
-		//location.href="signin.jsp"
-    }    
-</script>
