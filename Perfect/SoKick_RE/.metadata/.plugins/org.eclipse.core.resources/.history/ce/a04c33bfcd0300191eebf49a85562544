@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Typify by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+
+	<div margin-top="1px" align="right">
+		<button style="color:white; opacity: 0.5;" onclick="location.href='../Modify.jsp'"><strong style="color:black;">회원 수정</strong></button>
+      <button style="color:white; opacity:0.5;" onclick="location.href='../Logout.jsp'"><strong style="color:black;">로그 아웃</strong></button>
+	</div>
+
+		<!-- Banner -->
+			<section id="banner" style="background-image:url('images/icons/mainImage1.png'); -webkit-background-size:cover ;background-size:cover ;">
+
+
+				<h2 style="opacity: 0;"><strong>d</strong></h2>
+				<p style="opacity: 0;">!!!</p>
+				<br><br><br>
+				<ul class="actions">
+					<li><a href="reservation.html" class="button special" style="background-color: #57b846; opacity:0;"></a></li>
+				</ul>
+				<br><br><br><br>
+			</section>
+
+		<br><br>
+
+		<section  style=" -webkit-background-size:cover ;background-size:cover; align-content: center" >
+			<h2 style="opacity:0;"><strong>아직도 걸어다니세요?</strong></h2>
+
+			<center><button class="login100-form-btn" style="align-items: center; width:32%;" onclick="location.href='check.html'"><span><strong style="color:white; font-size:20px;">지금 바로 대여하러가기!</strong></span>
+			</button></center>
+			
+			<br><br><br>
+
+         <center><button class="login100-form-btn" style="align-items: center; width:20%; opacity:0.8;" onclick="location.href='../ret.jsp'"><span><strong style="color:white; font-size:15px;">반납하기</strong></span>
+         </button></center>
+		</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper special">
+				<div class="inner">
+					<header class="major">
+						<h2><span>SOKICK</span>이 처음이세요?</h2>
+					</header>
+					<div class="features">
+						<div class="feature">
+							<i class="fa fa-diamond"></i>
+							<h3>저렴한 가격</h3>
+							<p>SOKICK의 저렴한 가격에 놀라지 마세요!</p>
+							<br><br>
+						</div>
+						<div class="feature">
+							<i class="fa fa-copy"></i>
+							<h3>편리한 위치</h3>
+							<p>각 정류소의 정보를 확인해보세요.</p>
+						</div>
+						<div class="feature">
+							<i class="fa fa-paper-plane-o"></i>
+							<h3>대여하기</h3>
+							<p>SOKICK만의 편리한 UI로 빠르게 대여해보세요.</p>
+						</div>
+						<div class="feature">
+							<i class="fa fa-save"></i>
+							<h3>대여 현황 확인</h3>
+							<p>각 정류소의 대여 현황을 간편하게 확인해보세요.</p>
+							<br><br>
+						</div>
+						<div class="feature">
+							<i class="fa fa-envelope-o"></i>
+							<h3>Contact</h3>
+							<p>SOKICK 불편한 점을 관리자에게 부담없이 말해주세요.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

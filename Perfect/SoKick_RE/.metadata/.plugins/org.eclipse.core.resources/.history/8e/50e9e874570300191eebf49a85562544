@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>So kick - Sign up</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" action="../SingUp.jsp" method="post">
+					<span class="login100-form-title">
+						SO-KICK 회원가입
+					</span>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate="학번을 입력해주세요">
+						<input class="input100" type="text" name="username" id="studentid" placeholder="학번">
+						<span class="focus-input100"></span>
+                    </div>
+                    
+					<div class="wrap-input100 validate-input" data-validate =  "비밀번호를 입력해주세요">
+						<input class="input100" type="password" name="pass" id="password" placeholder="비밀번호">
+						<span class="focus-input100"></span>
+                    </div>
+
+                    <br>
+
+                    <div class="wrap-input100 validate-input" data-validate =  "학번을 입력해주세요">
+                            <input class="input100" type="text" name="major" id="major" placeholder="학과">
+                            <span class="focus-input100"></span>
+                    </div>
+
+                    <br>
+
+                    <div class="wrap-input100 validate-input" data-validate = "전화번호를 입력해주세요">
+                            <input class="input100" type="tel" name="phonenum" id="phonenum" placeholder="전화번호">
+                            <span class="focus-input100"></span>
+                    </div>
+                    
+                    <br>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" onclick="click_sign_in();">
+							회원 가입
+						</button>
+                    </div>
+                    
+                    <br><br>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+    <script src="js/main.js"></script>
+    
+    
+
+</body>
+</html>
+
+<script>
+    function click_sign_up(){
+        회원가입시키기
+		emptycheck();
+		//여기서 qeury로 넘기면됨.
+	}
+
+	function emptycheck(){
+		if((document.getElementById("id").value == "") || (document.getElementById("password").value == "") 
+		|| (document.getElementById("major").value=="") || (document.getElementById("phonenum").value == ""){
+			alert("필수항목(*)을 빠짐없이 입력해주세요");
+			return;			
+		}
+	}
+	
+</script>
