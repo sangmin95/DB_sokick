@@ -37,17 +37,17 @@
 			<div class="wrap-login100">
 				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" >
                     <span class="login100-form-title">
-						KNU SOKICK í˜„í™©í™•ì¸
+						KNU SOKICK ÇöÈ²È®ÀÎ
 					</span>
                 <div>
                     <img src="images/knuMapMarker.PNG" width="400" height="300"><br><br><br>
                 </div>
                     <div class="form-group">
-                        <label for="id" >  ì¶œë°œì§€ &nbsp; : &nbsp; <%=gate%> </label>
+                        <label for="id" >  Ãâ¹ßÁö &nbsp; : &nbsp; <%=gate%> </label>
                     </div>
 
                     <div class="form-group" id="wrapper" ">
-                        <label><%=gate%>ì— í˜„ì¬ <%=available%>ëŒ€ì˜ kickboardê°€ ì‚¬ìš© ê°€ëŠ¥í•©ë‹ˆë‹¤.</label>                                               
+                        <label><%=gate%>¿¡ ÇöÀç <%=available%>´ëÀÇ kickboard°¡ »ç¿ë °¡´ÉÇÕ´Ï´Ù.</label>                                               
                     </div>
 				</form>
 			</div>
@@ -80,11 +80,11 @@
 <script>
     function click_log_in(){
 		
-        //if id ì—†ìœ¼ë©´
-        //alert("ì—†ëŠ” IDì…ë‹ˆë‹¤.");
-        //if password ë‹¤ë¥´ë©´
-        //alert("ì—†ëŠ” password ì…ë‹ˆë‹¤.");
-        //í†µê³¼
+        //if id ¾øÀ¸¸é
+        //alert("¾ø´Â IDÀÔ´Ï´Ù.");
+        //if password ´Ù¸£¸é
+        //alert("¾ø´Â password ÀÔ´Ï´Ù.");
+        //Åë°ú
 		//location.href="signin.jsp"
     }    
 </script>
