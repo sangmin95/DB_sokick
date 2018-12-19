@@ -68,7 +68,9 @@
 			available = rs.getInt("count_kickboards");
 		}
       out.println("available = %d\n",available);
-		
+
+		response.sendRedirect("state_result.jsp?gate="+gate+"&available"+available);
+	
 		conn.commit();
 		conn.setAutoCommit(true);
 		stmt.close();
