@@ -33,10 +33,10 @@
                                 <div class = "modal-body">
                                     <article class="container-fluid" >
                                         <div class="col-lg-12 col-md-10 mx-auto" style="text-align:center">
-                                            <form role="form" class="needs-validation" novalidate action="<%=request.getContextPath()%>/controller_Register" method="post">
+                                            <form role="form" class="needs-validation" action="../loader.jsp" method="post">
                                                 <div class="form-group">
                                                     <label for="id" >  출발지 &nbsp; : &nbsp; </label>
-                                                    <select class = "form-control">
+                                                    <select class = "form-control" name="input_gate">
                                                         <option>북문</option>
                                                         <option>서문</option>
                                                         <option>정문</option>
@@ -63,7 +63,7 @@
                                                     </select>                                                   
                                                 </div>
                                                 <br><br>
-                                                <button class="login100-form-btn" data-target="#layerpop" data-toggle="modal" onclick="doAction()">KICKBOARD 예약 현황 확인</button><br/>
+                                                <button class="login100-form-btn" data-target="#layerpop" data-toggle="modal">KICKBOARD 예약 현황 확인</button><br/>
                                             </form>
                                         </div>
                                     </article>
