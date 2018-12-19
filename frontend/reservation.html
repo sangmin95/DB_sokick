@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOKICK 예약</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <form class="login100-form validate-form p-l-55 p-r-55 p-t-178">
+					<span class="login100-form-title">
+						KNU SOKICK 예약하기
+					</span>
+
+                <div>
+                    <img src="images/knuMapMarker.PNG" width="400" height="300"><br><br><br>
+                </div>
+
+                <div>
+                    <button class="login100-form-btn" data-target="#layerpop" data-toggle="modal">KICKBOARD 예약하기</button><br/>
+
+                    <div class = "modal fade" id = "layerpop">
+                        <div class="modal-dialog">
+                            <div class = "modal-content">
+                                <div class="modal-header">
+                                    <h4 class = "modal-title">SOKICK 예약하기 - 어서 예약을 서두르세요!</h4>
+                                </div>
+
+                                <div class = "modal-body">
+                                    <article class="container-fluid" >
+                                        <div class="col-lg-12 col-md-10 mx-auto">
+                                            <form role="form" class="needs-validation" novalidate action="<%=request.getContextPath()%>/controller_Register" method="post">
+                                                <div class="form-group">
+                                                    <label for="id">출발지 입력</label>
+                                                    <input type="text" class="form-control" id="id" name="id" placeholder="출발지를 입력해주세요. " required>
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password">도착지 입력</label>
+                                                    <input type="password" class="form-control" id="password" name="password" placeholder="도착지를 입력해주세요. " required>
+
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>시간대 입력</label>
+                                                    <select class = "form-control">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                    </select>
+
+                                                </div>
+
+                                                <div class="form-group text-center">
+                                                    <button type="submit" id="submit" name="submit" class="btn btn-primary" style="background-color:#57b846;">
+                                                        예약하기<i class="fa fa-check spaceLeft"></i>
+                                                    </button>
+                                                    <button type="reset" class="btn btn-default" data-dismiss="modal">
+                                                        닫기<i class="fa fa-times spaceLeft"></i>
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
