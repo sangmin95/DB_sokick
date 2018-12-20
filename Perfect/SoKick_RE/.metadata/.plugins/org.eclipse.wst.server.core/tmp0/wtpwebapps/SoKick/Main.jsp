@@ -108,7 +108,7 @@
 					count++;
 				}
 
-				if (count == 1) {%>
+				if (count != 0) {%>
 				<br>
 				<br>
 				<br>

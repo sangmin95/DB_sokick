@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SOKICK 예약</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css"
+	href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+#wrapper {
+	width: 500px;
+	margin: 0 auto;
+}
+</style>
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form role="form" class="login100-form validate-form p-l-55 p-r-55 p-t-178" action="../rent.jsp"
+					method="post">
+					<span class="login100-form-title"> KNU SOKICK 대여하기 </span>
+
+					<div>
+						<img src="images\knuMapMarker.png" width="400" height="300"><br>
+						<br> <br>
+					</div>
+
+					<div>
+						<div class="modal fade" id="layerpop">
+							<article class="container-fluid">
+								<div class="col-lg-12 col-md-10 mx-auto">
+
+									<div class="form-group" style="text-align: center;">
+										<label for="id"> 출발지 &nbsp; : &nbsp; </label> <select
+											class="form-control" name="departure"
+											style="text-align: center;">
+											<option>북문</option>
+											<option>서문</option>
+											<option>정문</option>
+											<option>동문</option>
+											<option>쪽문</option>
+										</select>
+
+									</div>
+									<div class="form-group" style="text-align: center;">
+										<label for="password"> 도착지 &nbsp; : &nbsp; </label> <select
+											class="form-control" name="destination"
+											style="text-align: center;">
+											<option>북문</option>
+											<option>서문</option>
+											<option>정문</option>
+											<option>동문</option>
+											<option>쪽문</option>
+										</select>
+									</div>
+									<br> <br> <br> <br> <br>
+									<button class="login100-form-btn">KICKBOARD 대여하기</button>
+									<br>
+
+								</div>
+							</article>
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

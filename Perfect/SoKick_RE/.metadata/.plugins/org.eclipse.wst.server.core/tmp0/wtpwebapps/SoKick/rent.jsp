@@ -55,11 +55,16 @@
 			kid = rs.getInt("kid");
 			break;
 		}
-		insertSql = "insert into rents values('"+ sid +"',"+ kid +",(select sno from station where address = '"+destination+"'))";
-		System.out.println(insertSql);
+		insertSql = "insert into rents values('"+ sid +"'," + kid +",(select sno from station where address = '"+destination+"'))";
 		count = stmt.executeUpdate(insertSql);
 		
-		response.sendRedirect("main.jsp");
+		insertSql = "insert into rent_record values('"+ sid +"'," + kid +"," + 
+				"(select sno from station where address = '"+departure+"')," +
+				"(select sno from station where address = '"+destination+"')," +
+				"to_date((select to_char(sysdate, 'YYYYMMDDHH24:MI:SS') from dual),'YYYY/MM/DD HH24:MI:SS'))";
+		count = stmt.executeUpdate(insertSql);
+		
+		response.sendRedirect("Main.jsp");
 		
 		conn.commit();
 		conn.setAutoCommit(true);
